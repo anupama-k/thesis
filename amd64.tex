@@ -18,13 +18,13 @@ One of the main features of AMD64 architecture is the 64-bit register extension.
 %\figurename{} 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.65]{./figures/registers.eps}
+\includegraphics[scale=0.65]{./figures/registers.png}
 \caption{AMD64 Registers}
-\label{fig:registers.eps}
+\label{fig:registers.png}
 \end{figure}
 
 
-~\figurename{~\ref{fig:registers.eps}} shows the AMD64 application-programming register set. They include the general-purpose registers (GPRs), segment registers, flags register (64-bits), instruction-pointer register (64-bits) and the media registers. 
+~\figurename{~\ref{fig:registers.png}} shows the AMD64 application-programming register set. They include the general-purpose registers (GPRs), segment registers, flags register (64-bits), instruction-pointer register (64-bits) and the media registers. 
 
 \subsection{MODES OF OPERATION}
 In addition to the x86 legacy mode, another major feature of AMD64 for is its long mode. This is the mode where a 64-bit application (or operating system) can access 64-bit instructions and registers.%~\figurename{~\ref{fig:modes.eps}} shows the features of each mode of operation in AMD64 architecture. 
@@ -100,14 +100,14 @@ Memory management refers to the process involved in translating address generate
 
 \subsection{SEGMENTATION} 
 Segmentation mainly helps system software to isolate software processes (tasks) and the data used by that process to increase the reliability of system running multiple process simultaneously. The AMD64 architecture is designed to support all forms of legacy segmentation. In 64-bit mode segmentation is not adopted (use flat band segmentation). Segmentation is, however, used in compatibility mode and legacy mode. 
-~\figurename~{\ref{fig:segmentation.eps}} shows segmented virtual memory.
+~\figurename~{\ref{fig:segmentation.png}} shows segmented virtual memory.
 
 %\figurename{} 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{./figures/segmentation.eps}
+\includegraphics[scale=0.5]{./figures/segmentation.png}
 \caption{Segmented Memory Model}
-\label{fig:segmentation.eps}
+\label{fig:segmentation.png}
 \end{figure}
 
 
@@ -122,9 +122,9 @@ Paging allows software and data to be relocated in physical address space using 
 %\figurename{} 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{./figures/paging.eps}
+\includegraphics[scale=0.5]{./figures/paging.png}
 \caption{Paged Memory Model}
-\label{fig:paging.eps}
+\label{fig:paging.png}
 \end{figure}
 
 
