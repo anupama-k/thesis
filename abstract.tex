@@ -1,14 +1,25 @@
-\section*{\centering ABSTRACT}
-\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{mathptmx}
+\usepackage[top=1.5in,left=1.5in,right=1in,bottom=1in]{geometry}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries\filcenter}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
+\titlespacing*{\chapter}{0pt}{-50pt}{20pt}
+
+\begin{document}
+\chapter*{\centering \Large{ABSTRACT}}
 
 
-\centerline{\emph{\bf A method of Coverage Collection for Stimulus on Emulator }}
-\vspace{5pt}
-To verify and to validate a micro-electronic circuit, stimulus is run on varied forms and could come from varied sources. During functional verification of a micro-electronic circuit, coverage is a mechanism to measure effectiveness and completeness of stimuus. On the other hand, we do not have similar mechanisms available for stimulus from other sources where verification simulators cannot be used. It is valuable to generate such coverage information, particularly where it would add value, such as Verification with Emulator. Ever increasing design complexity compels coverage generation and collation over a period of time, say a week or fortnight, as it enables many iteration of stimulus, which is not possible otherwise, due to compute and storage limitations. Such coverage storage and collation tools are already available and is in use in micro-electronic design houses. This project discusses and devises one method of collection, storage and collation of functional coverage for stimulus run on Emulator.
+\centerline{\emph{\large{\bf A method of Coverage Collection for Stimulus on Emulator }}}
+\vspace{10pt}
+To verify and to validate a micro-electronic circuit, stimulus is run on varied forms and could come from varied sources. During functional verification of a micro-electronic circuit, coverage is a mechanism to measure effectiveness and completeness of stimulus. On the other hand, we do not have similar mechanisms available for stimulus from other sources where verification simulators cannot be used. It is valuable to generate such coverage information, particularly where it would add value, such as Verification with Emulator. Ever increasing design complexity compels coverage generation and collation over a period of time, say a week or fortnight, as it enables many iteration of stimulus, which is not possible otherwise, due to compute and storage limitations. Such coverage storage and collation tools are already available and is in use in micro-electronic design houses. This project discusses and devises one method of collection, storage and collation of functional coverage for stimulus run on Emulator.
 
 
 
 \paragraph{Keywords:}
  \emph{Coverage Database, Emulation, Functional coverage, Simulation, SOC.}
 
-
+\end{document}
