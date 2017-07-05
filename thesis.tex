@@ -1,0 +1,77 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{mathptmx}
+\usepackage[top=1in,left=1.5in,right=1in,bottom=1in]{geometry}
+\linespread{1.5}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{titlesec}
+\titleformat{\chapter}
+{\Large\bfseries\filcenter}{\thechapter.}{20pt}{\Large}   
+\titlespacing*{\chapter}{0pt}{-50pt}{20pt}
+\titleformat*{\section}
+{\large\bfseries}
+\titleformat*{\subsection}
+{\normalsize\bfseries}
+\titleformat*{\subsubsection}
+{\normalsize\bfseries}
+
+\usepackage{pifont}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Verilog,
+  aboveskip=2mm,
+  belowskip=2mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\newpage
+\input{abstract.tex}
+
+\newpage
+\pagenumbering{arabic}
+\input{introduction.tex}
+
+\newpage
+\input{amd64.tex}
+
+\newpage
+\input{func_verif.tex}
+
+\newpage
+\input{coverage.tex}
+
+\newpage
+\input{coverage_on_emulator.tex}
+
+\newpage
+\input{implementation_results.tex}
+
+\newpage
+\input{conclusion.tex}
+
+\end{document}
+
