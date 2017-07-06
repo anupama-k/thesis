@@ -45,6 +45,10 @@
   tabsize=3
 }
 
+\usepackage[nottoc,notlof,notlot]{tocbibind} 
+\renewcommand\bibname{REFERENCES}
+\usepackage[hidelinks,colorlinks]{hyperref}
+
 \begin{document}
 \pagenumbering{gobble}
 
@@ -76,6 +80,9 @@
 
 \newpage
 \input{conclusion.tex}
+
+\newpage
+\input{references.tex}
 
 \end{document}
 
