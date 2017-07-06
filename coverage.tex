@@ -33,7 +33,6 @@ After every simulation in a regression, an XML file containing all coverage info
 Functional coverage model is specified using SystemVerilog. Usually the coverage results are collected by the simulator tools and are dumped in some internal binary format. This example uses \emph{VCS simulator from Synopsys} to illustrate the coverage generation from a testbench. VCS simulation of the testbench generates the coverage and these coverage results are stored in \emph{simv.vdb} directory.
 
 \subsection{TESTBENCH EXAMPLE}
-%%\lstinputlisting[language=Verilog]{rtl.sv}
 \begin{lstlisting}
 module simple_coverage();
 
@@ -88,7 +87,7 @@ endmodule
 
 \end{lstlisting}
 
-\section{SIMULATION OUTPUT}
+\subsection{SIMULATION OUTPUT}
 \begin{verbatim}
 @ 5ns Address : 36 data 81, rw 1, parity 0
 @15ns Address : 99 data 0d, rw 1, parity 1
@@ -100,10 +99,9 @@ endmodule
 @75ns Address :143 data f2, rw 0, parity 1
 @85ns Address :232 data c5, rw 0, parity 0
 @95ns Address :189 data 2d, rw 1, parity 0
-
 \end{verbatim} 
 
-\section{COVERAGE REPORT}
+\subsection{COVERAGE REPORT}
 Simulation of the testbench using VCS simulator generates \emph{simv.vdb} which is the \emph{Verification Database directory}. VCS writes intermediate files and reports about coverage in the form of XML files in subdirectories within in this directory.
 
 To view the coverage report, a reporter utility of VCS named \emph{'urg'} is used.
@@ -115,7 +113,6 @@ To view the coverage report, a reporter utility of VCS named \emph{'urg'} is use
 \label{fig:urgreport2.png}
 \end{figure}
 
-%\vspace{15pt}
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.85]{./figures/urgreport3.png}
@@ -123,7 +120,6 @@ To view the coverage report, a reporter utility of VCS named \emph{'urg'} is use
 \label{fig:urgreport3.png}
 \end{figure}
 
-%\vspace{15pt}
 \begin{figure}[h!]
 \centering
 \includegraphics{./figures/urgreport4.png}
@@ -131,7 +127,6 @@ To view the coverage report, a reporter utility of VCS named \emph{'urg'} is use
 \label{fig:urgreport4.png}
 \end{figure}
 
-%\vspace{15pt}
 \begin{figure}[h!]
 \centering
 \includegraphics{./figures/urgreport5.png}
@@ -139,7 +134,6 @@ To view the coverage report, a reporter utility of VCS named \emph{'urg'} is use
 \label{fig:urgreport5.png}
 \end{figure}
 
-%\vspace{15pt}
 \begin{figure}[h!]
 \centering
 \includegraphics{./figures/urgreport6.png}
